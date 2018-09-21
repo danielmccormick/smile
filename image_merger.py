@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 import cv2
 
 FACE_MODEL_PATH = "shape_predictor_68_face_landmarks.dat"
-detector = dlib.get_frontal_face_detector()
+detector = dlib.get_frontal_face_detector() #Grabbing the frontal face detector from dlib;
 
 
 class Replacement:
-    def __init__(self, original_face, new_image_path, new_face):
+    def __init__(self, original_face, new_image_path, new_face): #Initializing the replacement
         self.original_face = original_face
         self.new_image_path = new_image_path
         self.new_face = new_face
